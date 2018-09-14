@@ -19,7 +19,7 @@ class StatusMenuController: NSObject {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let icon = NSImage(named: NSImage.Name(rawValue: "statusIcon"))
+        let icon = NSImage(named: "statusIcon")
         icon?.isTemplate = true
         statusItem.image = icon
         statusItem.menu = statusMenu

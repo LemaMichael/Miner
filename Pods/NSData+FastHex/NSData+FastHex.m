@@ -78,14 +78,18 @@ static uint8_t nibbleFromChar(unichar c) {
     char *const hexChars = malloc(charLength * sizeof(*hexChars));
     __block char *charPtr = hexChars;
 
-    [self enumerateByteRangesUsingBlock:^(const void *bytes, NSRange byteRange, BOOL *stop) {
-        const uint8_t *bytePtr = bytes;
-        for (NSUInteger count = 0; count < byteRange.length; ++count) {
-            const uint8_t byte = *bytePtr++;
-            *charPtr++ = hexTable[(byte >> 4) & 0xF];
-            *charPtr++ = hexTable[byte & 0xF];
-        }
-    }];
+    if (@available(macOS 10.9, *)) {
+        [self enumerateByteRangesUsingBlock:^(const void *bytes, NSRange byteRange, BOOL *stop) {
+            const uint8_t *bytePtr = bytes;
+            for (NSUInteger count = 0; count < byteRange.length; ++count) {
+                const uint8_t byte = *bytePtr++;
+                *charPtr++ = hexTable[(byte >> 4) & 0xF];
+                *charPtr++ = hexTable[byte & 0xF];
+            }
+        }];
+    } else {
+        // Fallback on earlier versions
+    }
 
     return [[NSString alloc] initWithBytesNoCopy:hexChars length:charLength encoding:NSASCIIStringEncoding freeWhenDone:YES];
 }
