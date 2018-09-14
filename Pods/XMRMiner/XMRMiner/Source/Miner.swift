@@ -55,6 +55,7 @@ public final class Miner {
             let t = Thread(block: mine)
             t.name = "Mining Thread \(i+1)"
             t.qualityOfService = .userInitiated
+            threads.append(t)
             t.start()
         }
     }
