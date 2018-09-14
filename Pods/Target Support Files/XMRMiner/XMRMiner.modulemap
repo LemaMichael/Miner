@@ -1,0 +1,6 @@
+framework module XMRMiner {
+  umbrella header "XMRMiner-umbrella.h"
+
+  export *
+  module * { export * }
+}
