@@ -16,7 +16,10 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="SaG-ey-Znx" customClass="StatusMenuController" customModule="Miner" customModuleProvider="target">
             <connections>
+                <outlet property="hashRate" destination="f5o-me-3Z8" id="959-ej-yQF"/>
                 <outlet property="statusMenu" destination="w7w-qA-pIJ" id="OJU-DW-y4g"/>
+                <outlet property="submittedHashes" destination="5mc-hK-zwY" id="Rzb-P5-0W8"/>
+                <outlet property="totalSubmitted" destination="XG1-eh-WEw" id="T6f-X6-U9D"/>
             </connections>
         </customObject>
         <menu id="w7w-qA-pIJ" userLabel="Status Menu">

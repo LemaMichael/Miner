@@ -11,13 +11,15 @@ import XMRMiner
 
 class StatusMenuController: NSObject {
     
-    var isMining = false
-    
     let miner = Miner(destinationAddress: "45ZvUbU9EYnKiJMUJ4DfkkEe3iVjUNgxUAtoJ1ENgA27LCcuMwYjcvb4daZhfQXctHJfmoAcJXwP16cjvHAuDVfv54Wtzbz")
+    var isMining = false
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
     @IBOutlet weak var statusMenu: NSMenu!
-    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    
+    @IBOutlet weak var hashRate: NSMenuItem!
+    @IBOutlet weak var submittedHashes: NSMenuItem!
+    @IBOutlet weak var totalSubmitted: NSMenuItem!
+
     @IBAction func miningClicked(_ sender: NSMenuItem) {
         if isMining {
             miner.stop()
@@ -30,6 +32,7 @@ class StatusMenuController: NSObject {
     }
     
     @IBAction func quitClicked(_ sender: Any) {
+        miner.stop()
         NSApplication.shared.terminate(self)
     }
     
@@ -62,8 +65,10 @@ class StatusMenuController: NSObject {
 
 extension StatusMenuController: MinerDelegate {
     func miner(updatedStats stats: MinerStats) {
-        print("\(stats.hashRate) H/s")
-        print("\(stats.submittedHashes)")
+        print(stats.hashRate)
+        print(stats.submittedHashes)
+        hashRate.title = String(format: "Hash Rate: %.2f H/s", stats.hashRate)
+        submittedHashes.title = "Submitted Hashes: \(stats.submittedHashes) H/s"
     }
 }
 
