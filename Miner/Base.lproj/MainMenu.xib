@@ -21,6 +21,16 @@
         </customObject>
         <menu id="w7w-qA-pIJ" userLabel="Status Menu">
             <items>
+                <menuItem title="H/s" id="f5o-me-3Z8">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Submitted Hashes" id="5mc-hK-zwY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Total Submitted" id="XG1-eh-WEw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="hgZ-sz-Xhc"/>
                 <menuItem title="Quit" id="NI9-TC-uR7" userLabel="Quit">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -30,5 +40,8 @@
             </items>
             <point key="canvasLocation" x="112" y="-263"/>
         </menu>
+        <menuItem title="Item" id="VbI-FG-Sa1">
+            <modifierMask key="keyEquivalentModifierMask"/>
+        </menuItem>
     </objects>
 </document>
