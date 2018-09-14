@@ -31,6 +31,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="hgZ-sz-Xhc"/>
+                <menuItem title="Stop Mining" id="wDZ-BI-tBe">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="miningClicked:" target="SaG-ey-Znx" id="I9w-En-Dtk"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Quit" id="NI9-TC-uR7" userLabel="Quit">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
