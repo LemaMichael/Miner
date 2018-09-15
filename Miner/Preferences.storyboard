@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="Qo1-zY-lUX">
+            <objects>
+                <windowController storyboardIdentifier="PreferencesController" showSeguePresentationStyle="single" id="qYi-4G-RS5" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="j14-vv-TlL">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
+                        <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="250" height="100"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+                        <connections>
+                            <outlet property="delegate" destination="qYi-4G-RS5" id="eGr-3O-Hra"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="mJB-8v-SNv" kind="relationship" relationship="window.shadowedContentViewController" id="oU0-UM-gli"/>
+                    </connections>
+                </windowController>
+                <customObject id="2gg-HX-hwu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="204"/>
+        </scene>
+        <!--Pref View Controller-->
+        <scene sceneID="v4T-C7-chv">
+            <objects>
+                <viewController id="mJB-8v-SNv" customClass="PrefViewController" customModule="Miner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="dGf-wd-quT">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="leD-A1-co8">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                                <view key="contentView" id="dGR-s5-054">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="idI-BV-Yld">
+                                            <rect key="frame" x="65" y="30" width="120" height="39"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="iGw-Ez-TVt"/>
+                                            </constraints>
+                                            <buttonCell key="cell" type="check" title="Launch At Login" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="MF7-j1-Sab">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="launchAtLoginBtnClicked:" target="mJB-8v-SNv" id="7Uv-fv-UuH"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="idI-BV-Yld" firstAttribute="centerY" secondItem="dGR-s5-054" secondAttribute="centerY" id="JO4-12-m76"/>
+                                        <constraint firstItem="idI-BV-Yld" firstAttribute="centerX" secondItem="dGR-s5-054" secondAttribute="centerX" id="TIE-sR-BRS"/>
+                                    </constraints>
+                                </view>
+                                <color key="fillColor" red="1" green="0.75294117647058822" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="leD-A1-co8" firstAttribute="leading" secondItem="dGf-wd-quT" secondAttribute="leading" id="1oD-IB-98F"/>
+                            <constraint firstAttribute="trailing" secondItem="leD-A1-co8" secondAttribute="trailing" id="ClR-O7-qwN"/>
+                            <constraint firstAttribute="bottom" secondItem="leD-A1-co8" secondAttribute="bottom" id="XKC-wP-1U6"/>
+                            <constraint firstItem="leD-A1-co8" firstAttribute="top" secondItem="dGf-wd-quT" secondAttribute="top" id="za4-Yc-rbK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="launchAtLoginBtn" destination="idI-BV-Yld" id="fbQ-Cl-xEi"/>
+                    </connections>
+                </viewController>
+                <customObject id="A91-fh-9iC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14" y="568"/>
+        </scene>
+    </scenes>
+</document>

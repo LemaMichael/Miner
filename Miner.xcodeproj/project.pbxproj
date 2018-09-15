@@ -12,6 +12,8 @@
 		4C29D134214C2DA0007DB407 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C29D132214C2DA0007DB407 /* MainMenu.xib */; };
 		4C9235A7214C36F300D9985D /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9235A6214C36F300D9985D /* StatusMenuController.swift */; };
 		4CB35ECC214C74F50071BFAD /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB35ECB214C74F50071BFAD /* UserDefaultsExtension.swift */; };
+		4CD5A839214CC67D00A5059F /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5A838214CC67D00A5059F /* PrefViewController.swift */; };
+		4CD5A83B214CC6CF00A5059F /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD5A83A214CC6CF00A5059F /* Preferences.storyboard */; };
 		FC8A88A066A5C3415A18BE8A /* Pods_Miner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDAC41B0ABF951731D34EEF /* Pods_Miner.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		4C29D136214C2DA0007DB407 /* Miner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Miner.entitlements; sourceTree = "<group>"; };
 		4C9235A6214C36F300D9985D /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		4CB35ECB214C74F50071BFAD /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		4CD5A838214CC67D00A5059F /* PrefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
+		4CD5A83A214CC6CF00A5059F /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
 		5C9B8277C75B695D2263F584 /* Pods-Miner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miner/Pods-Miner.release.xcconfig"; sourceTree = "<group>"; };
 		D65E056D586555B317D4F51D /* Pods-Miner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miner/Pods-Miner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +68,8 @@
 			children = (
 				4C29D12E214C2D9F007DB407 /* AppDelegate.swift */,
 				4C9235A6214C36F300D9985D /* StatusMenuController.swift */,
+				4CD5A838214CC67D00A5059F /* PrefViewController.swift */,
+				4CD5A83A214CC6CF00A5059F /* Preferences.storyboard */,
 				4C29D130214C2DA0007DB407 /* Assets.xcassets */,
 				4C29D132214C2DA0007DB407 /* MainMenu.xib */,
 				4C29D135214C2DA0007DB407 /* Info.plist */,
@@ -102,6 +108,7 @@
 				4C29D128214C2D9F007DB407 /* Frameworks */,
 				4C29D129214C2D9F007DB407 /* Resources */,
 				E5420797217315D21929E4F7 /* [CP] Embed Pods Frameworks */,
+				4C4E6625214CD01700FAF308 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -157,12 +164,26 @@
 			files = (
 				4C29D131214C2DA0007DB407 /* Assets.xcassets in Resources */,
 				4C29D134214C2DA0007DB407 /* MainMenu.xib in Resources */,
+				4CD5A83B214CC6CF00A5059F /* Preferences.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4C4E6625214CD01700FAF308 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/bash\n\norigin_helper_path=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/LaunchAtLogin.framework/Resources/LaunchAtLoginHelper.app\"\nhelper_dir=\"$BUILT_PRODUCTS_DIR/$CONTENTS_FOLDER_PATH/Library/LoginItems\"\nhelper_path=\"$helper_dir/LaunchAtLoginHelper.app\"\n\nrm -rf \"$helper_path\"\nmkdir -p \"$helper_dir\"\ncp -rf \"$origin_helper_path\" \"$helper_dir/\"\n\ndefaults write \"$helper_path/Contents/Info\" CFBundleIdentifier -string \"$PRODUCT_BUNDLE_IDENTIFIER-LaunchAtLoginHelper\"\ncodesign --force --entitlements=\"$CODE_SIGN_ENTITLEMENTS\" --sign=\"$EXPANDED_CODE_SIGN_IDENTITY_NAME\" \"$helper_path\"\n\nif [[ $CONFIGURATION == \"Release\" ]]; then\nrm -rf \"$origin_helper_path\"\nrm \"$(dirname $origin_helper_path)/copy-helper.sh\"\nfi\n";
+		};
 		8AA79946D5A21418D5D973E4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +210,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Miner/Pods-Miner-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/LaunchAtLogin/LaunchAtLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/NSData+FastHex/NSData_FastHex.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/XMRMiner/XMRMiner.framework",
@@ -196,6 +218,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LaunchAtLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSData_FastHex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMRMiner.framework",
@@ -215,6 +238,7 @@
 				4C9235A7214C36F300D9985D /* StatusMenuController.swift in Sources */,
 				4CB35ECC214C74F50071BFAD /* UserDefaultsExtension.swift in Sources */,
 				4C29D12F214C2D9F007DB407 /* AppDelegate.swift in Sources */,
+				4CD5A839214CC67D00A5059F /* PrefViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

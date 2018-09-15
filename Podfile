@@ -7,5 +7,6 @@ target 'Miner' do
 
   # Pods for Miner
   pod 'XMRMiner'
+  pod 'LaunchAtLogin'
 
 end

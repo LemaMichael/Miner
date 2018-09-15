@@ -22,6 +22,16 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var totalSubmittedHeading: NSMenuItem!
     @IBOutlet weak var totalSubmitted: NSMenuItem!
     
+    @IBAction func preferencesClicked(_ sender: Any) {
+        
+        if NSApplication.shared.windows.count > 1 {
+            return
+        }
+
+        let prefController = NSStoryboard(name: "Preferences",bundle: nil).instantiateController(withIdentifier: "PreferencesController")  as! NSWindowController
+        prefController.showWindow(self)
+    }
+    
     @IBAction func miningClicked(_ sender: NSMenuItem) {
         if isMining {
             miner.stop()

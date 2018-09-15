@@ -1,5 +1,6 @@
 PODS:
   - CocoaAsyncSocket (7.6.3)
+  - LaunchAtLogin (2.2.0)
   - "NSData+FastHex (1.0.1)"
   - ObjectMapper (3.3.0)
   - XMRMiner (0.1.0):
@@ -8,21 +9,24 @@ PODS:
     - ObjectMapper (~> 3.0)
 
 DEPENDENCIES:
+  - LaunchAtLogin
   - XMRMiner
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CocoaAsyncSocket
+    - LaunchAtLogin
     - "NSData+FastHex"
     - ObjectMapper
     - XMRMiner
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  LaunchAtLogin: 7901f9a3bbfe9e1ea665407d04f4c39ac46fc833
   "NSData+FastHex": a22ad031ee10a4297d0bf4d20cf03406a4476169
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   XMRMiner: f7704f21d2418a751b6d7ca64263e2b917a89191
 
-PODFILE CHECKSUM: 3424d2a92618c13ee11ab6b3b2925c5b41e095ba
+PODFILE CHECKSUM: a607a35680d6d2648a36c391cd081de86b5dd9f1
 
 COCOAPODS: 1.5.3

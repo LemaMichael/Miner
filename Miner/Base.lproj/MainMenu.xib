@@ -46,6 +46,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="hgZ-sz-Xhc"/>
+                <menuItem title="Preferences..." id="ely-xw-Urt">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="preferencesClicked:" target="SaG-ey-Znx" id="xST-gh-U1O"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Quit" id="NI9-TC-uR7" userLabel="Quit">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
