@@ -70,8 +70,6 @@ class StatusMenuController: NSObject {
 
 extension StatusMenuController: MinerDelegate {
     func miner(updatedStats stats: MinerStats) {
-        print(stats.hashRate)
-        print(stats.submittedHashes)
         
         let currentHashed = UserDefaults.standard.getTotalHashes()
         if currentVal != stats.submittedHashes {

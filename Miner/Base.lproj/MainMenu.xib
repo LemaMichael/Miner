@@ -25,6 +25,13 @@
         </customObject>
         <menu id="w7w-qA-pIJ" userLabel="Status Menu">
             <items>
+                <menuItem title="Stop Mining" id="wDZ-BI-tBe">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="miningClicked:" target="SaG-ey-Znx" id="I9w-En-Dtk"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="fUq-9P-SzD"/>
                 <menuItem title="Hash Rate..." id="f5o-me-3Z8">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
@@ -39,12 +46,6 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="hgZ-sz-Xhc"/>
-                <menuItem title="Stop Mining" id="wDZ-BI-tBe">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="miningClicked:" target="SaG-ey-Znx" id="I9w-En-Dtk"/>
-                    </connections>
-                </menuItem>
                 <menuItem title="Quit" id="NI9-TC-uR7" userLabel="Quit">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
