@@ -2,8 +2,17 @@
   <img src = "/Preview/Logo.png">
 </p>
 
+[![Swift](https://img.shields.io/badge/Swift-4.2%2B-orange.svg)](https://swift.org)
+![Platform](https://img.shields.io/badge/platform-macOS-333333.svg)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
+
+Mining for Monero is easier now than ever before for macOS.
+
 ## Requirements
 - **macOS** 10.12+ 
+- Xcode 10+
 - Swift 4.2+
 
 ## Install
