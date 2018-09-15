@@ -25,12 +25,13 @@
         </customObject>
         <menu id="w7w-qA-pIJ" userLabel="Status Menu">
             <items>
-                <menuItem title="H/s" id="f5o-me-3Z8">
+                <menuItem title="Hash Rate..." id="f5o-me-3Z8">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem title="Submitted Hashes" id="5mc-hK-zwY">
+                <menuItem title="Submitted Hashes..." id="5mc-hK-zwY">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
+                <menuItem isSeparatorItem="YES" id="hVX-mg-gDk"/>
                 <menuItem title="Total Hashes Submitted" id="MIo-Kp-z6B">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>

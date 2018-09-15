@@ -34,7 +34,7 @@ extension UserDefaults {
     func getLaunchDate() -> String {
         guard let validDate = object(forKey: UserDefaultKeys.launchDate.rawValue) as? Date else {return ""}
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM dd, yyyy"
+        dateFormatter.dateFormat = "MMM. d, h:mm a"
         return dateFormatter.string(from: validDate)
     }
     

@@ -47,7 +47,8 @@ class StatusMenuController: NSObject {
         statusItem.image = icon
         statusItem.menu = statusMenu
         
-        totalSubmittedHeading.title = "Total Hashes since: \(UserDefaults.standard.getLaunchDate())"
+        totalSubmittedHeading.title = "Since \(UserDefaults.standard.getLaunchDate())"
+        totalSubmitted.title = "\(UserDefaults.standard.getTotalHashes()) H/s"
     }
     
     fileprivate func setupMiner() {
