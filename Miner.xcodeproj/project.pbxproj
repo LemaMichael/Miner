@@ -11,6 +11,7 @@
 		4C29D131214C2DA0007DB407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C29D130214C2DA0007DB407 /* Assets.xcassets */; };
 		4C29D134214C2DA0007DB407 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C29D132214C2DA0007DB407 /* MainMenu.xib */; };
 		4C9235A7214C36F300D9985D /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9235A6214C36F300D9985D /* StatusMenuController.swift */; };
+		4CB35ECC214C74F50071BFAD /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB35ECB214C74F50071BFAD /* UserDefaultsExtension.swift */; };
 		FC8A88A066A5C3415A18BE8A /* Pods_Miner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDAC41B0ABF951731D34EEF /* Pods_Miner.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		4C29D135214C2DA0007DB407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C29D136214C2DA0007DB407 /* Miner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Miner.entitlements; sourceTree = "<group>"; };
 		4C9235A6214C36F300D9985D /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		4CB35ECB214C74F50071BFAD /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		5C9B8277C75B695D2263F584 /* Pods-Miner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miner/Pods-Miner.release.xcconfig"; sourceTree = "<group>"; };
 		D65E056D586555B317D4F51D /* Pods-Miner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miner/Pods-Miner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 				4C29D132214C2DA0007DB407 /* MainMenu.xib */,
 				4C29D135214C2DA0007DB407 /* Info.plist */,
 				4C29D136214C2DA0007DB407 /* Miner.entitlements */,
+				4CB35ECB214C74F50071BFAD /* UserDefaultsExtension.swift */,
 			);
 			path = Miner;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9235A7214C36F300D9985D /* StatusMenuController.swift in Sources */,
+				4CB35ECC214C74F50071BFAD /* UserDefaultsExtension.swift in Sources */,
 				4C29D12F214C2D9F007DB407 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

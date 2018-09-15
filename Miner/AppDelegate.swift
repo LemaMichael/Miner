@@ -13,7 +13,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-   
+        if !UserDefaults.standard.hasLaunchedBefore() {
+            UserDefaults.standard.setTotalHashes(value: 0)
+            UserDefaults.standard.setLaunchedBefore(value: true)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

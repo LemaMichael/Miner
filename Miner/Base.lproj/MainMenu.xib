@@ -20,6 +20,7 @@
                 <outlet property="statusMenu" destination="w7w-qA-pIJ" id="OJU-DW-y4g"/>
                 <outlet property="submittedHashes" destination="5mc-hK-zwY" id="Rzb-P5-0W8"/>
                 <outlet property="totalSubmitted" destination="XG1-eh-WEw" id="T6f-X6-U9D"/>
+                <outlet property="totalSubmittedHeading" destination="MIo-Kp-z6B" id="3fh-KS-jad"/>
             </connections>
         </customObject>
         <menu id="w7w-qA-pIJ" userLabel="Status Menu">
@@ -30,7 +31,10 @@
                 <menuItem title="Submitted Hashes" id="5mc-hK-zwY">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem title="Total Submitted" id="XG1-eh-WEw">
+                <menuItem title="Total Hashes Submitted" id="MIo-Kp-z6B">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem id="XG1-eh-WEw">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="hgZ-sz-Xhc"/>
@@ -49,8 +53,5 @@
             </items>
             <point key="canvasLocation" x="112" y="-263"/>
         </menu>
-        <menuItem title="Item" id="VbI-FG-Sa1">
-            <modifierMask key="keyEquivalentModifierMask"/>
-        </menuItem>
     </objects>
 </document>
