@@ -12,7 +12,7 @@ import XMRMiner
 class StatusMenuController: NSObject {
     
     var currentVal: UInt = 0
-    let miner = Miner(destinationAddress: "45ZvUbU9EYnKiJMUJ4DfkkEe3iVjUNgxUAtoJ1ENgA27LCcuMwYjcvb4daZhfQXctHJfmoAcJXwP16cjvHAuDVfv54Wtzbz")
+    let miner = Miner(destinationAddress: UserDefaults.standard.getAddress())
     var isMining = false
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     

@@ -14,7 +14,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="250" height="100"/>
+                        <rect key="contentRect" x="196" y="240" width="800" height="300"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
                         <connections>
                             <outlet property="delegate" destination="qYi-4G-RS5" id="eGr-3O-Hra"/>
@@ -33,19 +33,19 @@
             <objects>
                 <viewController id="mJB-8v-SNv" customClass="PrefViewController" customModule="Miner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="dGf-wd-quT">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <box boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="leD-A1-co8">
-                                <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="300"/>
                                 <view key="contentView" id="dGR-s5-054">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="300"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="idI-BV-Yld">
-                                            <rect key="frame" x="65" y="30" width="120" height="39"/>
+                                            <rect key="frame" x="340" y="81" width="120" height="39"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="35" id="iGw-Ez-TVt"/>
+                                                <constraint firstAttribute="height" constant="35" id="DlO-JP-nqH"/>
                                             </constraints>
                                             <buttonCell key="cell" type="check" title="Launch At Login" bezelStyle="regularSquare" imagePosition="left" alignment="center" inset="2" id="MF7-j1-Sab">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -55,13 +55,51 @@
                                                 <action selector="launchAtLoginBtnClicked:" target="mJB-8v-SNv" id="7Uv-fv-UuH"/>
                                             </connections>
                                         </button>
+                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yXQ-Yu-opf">
+                                            <rect key="frame" x="20" y="172" width="760" height="22"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" placeholderString="45ZvUbU9EYnKiJMUJ4DfkkEe3iVjUNgxUAtoJ1ENgA27LCcuMwYjcvb4daZhfQXctHJfmoAcJXwP16cjvHAuDVfv54Wtzbz" bezelStyle="round" id="W5x-ic-XNx">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1cp-tH-YSd">
+                                            <rect key="frame" x="200" y="234" width="400" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="396" id="S4N-AJ-YhZ"/>
+                                            </constraints>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Monero Address" id="Oww-vG-6Ks">
+                                                <font key="font" size="16" name="AvenirNext-DemiBold"/>
+                                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BNY-Bd-paF">
+                                            <rect key="frame" x="250" y="209" width="300" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="296" id="lgj-FI-ce5"/>
+                                            </constraints>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Quit and Relaunch App for changes" id="n0X-Sd-ohE">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="idI-BV-Yld" firstAttribute="centerY" secondItem="dGR-s5-054" secondAttribute="centerY" id="JO4-12-m76"/>
-                                        <constraint firstItem="idI-BV-Yld" firstAttribute="centerX" secondItem="dGR-s5-054" secondAttribute="centerX" id="TIE-sR-BRS"/>
+                                        <constraint firstItem="1cp-tH-YSd" firstAttribute="centerX" secondItem="yXQ-Yu-opf" secondAttribute="centerX" id="8lw-f5-eCa"/>
+                                        <constraint firstAttribute="bottom" secondItem="idI-BV-Yld" secondAttribute="bottom" constant="83" id="CEi-IE-JLB"/>
+                                        <constraint firstItem="yXQ-Yu-opf" firstAttribute="leading" secondItem="dGR-s5-054" secondAttribute="leading" constant="20" id="Fov-PH-hAV"/>
+                                        <constraint firstItem="yXQ-Yu-opf" firstAttribute="centerX" secondItem="dGR-s5-054" secondAttribute="centerX" id="Ho6-bg-Jrh"/>
+                                        <constraint firstItem="idI-BV-Yld" firstAttribute="top" secondItem="yXQ-Yu-opf" secondAttribute="bottom" constant="54" id="RiG-MI-Ya1"/>
+                                        <constraint firstItem="BNY-Bd-paF" firstAttribute="top" secondItem="1cp-tH-YSd" secondAttribute="bottom" constant="8" symbolic="YES" id="d7t-Bs-gAr"/>
+                                        <constraint firstItem="BNY-Bd-paF" firstAttribute="centerX" secondItem="1cp-tH-YSd" secondAttribute="centerX" id="jrr-Kd-ra7"/>
+                                        <constraint firstItem="idI-BV-Yld" firstAttribute="centerX" secondItem="dGR-s5-054" secondAttribute="centerX" id="qe6-UJ-0e8"/>
+                                        <constraint firstItem="1cp-tH-YSd" firstAttribute="top" secondItem="dGR-s5-054" secondAttribute="top" constant="39" id="s4I-O7-zkV"/>
+                                        <constraint firstAttribute="trailing" secondItem="yXQ-Yu-opf" secondAttribute="trailing" constant="20" id="v2D-zy-ONG"/>
                                     </constraints>
                                 </view>
-                                <color key="fillColor" red="1" green="0.75294117647058822" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="0.15686274509803921" green="0.16862745098039217" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                         </subviews>
                         <constraints>
@@ -72,7 +110,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="instructionText" destination="BNY-Bd-paF" id="ChW-Xd-uRA"/>
                         <outlet property="launchAtLoginBtn" destination="idI-BV-Yld" id="fbQ-Cl-xEi"/>
+                        <outlet property="moneroAddressTF" destination="1cp-tH-YSd" id="ql0-9T-kHw"/>
+                        <outlet property="textField" destination="yXQ-Yu-opf" id="U4c-4W-hWM"/>
                     </connections>
                 </viewController>
                 <customObject id="A91-fh-9iC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

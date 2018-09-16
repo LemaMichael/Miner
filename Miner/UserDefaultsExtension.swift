@@ -10,6 +10,7 @@ import Foundation
 
 extension UserDefaults {
     enum UserDefaultKeys: String {
+        case address
         case launchDate
         case hasLaunchedBefore
         case hashesSubmitted
@@ -22,6 +23,15 @@ extension UserDefaults {
     func getTotalHashes() -> Int {
         return integer(forKey: UserDefaultKeys.hashesSubmitted.rawValue)
     }
+    
+    func setAddress(value: String) {
+        set(value, forKey: UserDefaultKeys.address.rawValue)
+        synchronize()
+    }
+    func getAddress() -> String {
+        return string(forKey: UserDefaultKeys.address.rawValue) ?? "45ZvUbU9EYnKiJMUJ4DfkkEe3iVjUNgxUAtoJ1ENgA27LCcuMwYjcvb4daZhfQXctHJfmoAcJXwP16cjvHAuDVfv54Wtzbz"
+    }
+    
     
     func setLaunchedBefore(value: Bool) {
         set(Date(), forKey: UserDefaultKeys.launchDate.rawValue)
