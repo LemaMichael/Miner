@@ -18,7 +18,7 @@ Mining for Monero is easier now than ever before for macOS.
 ## Install
 Clone the repository and run <code>Pod install</code> using <a href="http://cocoapods.org">CocoaPods</a>\
 **Or**\
-Download latest release <a href="https://github.com/LemaMichael/Miner/releases/download/v1.0/Miner.zip">here</a>
+Download latest release <a href="https://github.com/LemaMichael/Miner/releases/download/v1.1/Miner.zip">here</a>
 
 ## Demo
 <p align="left">
