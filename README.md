@@ -22,7 +22,7 @@ Download latest release <a href="https://github.com/LemaMichael/Miner/releases/d
 
 ## Demo
 <p align="left">
-  <img src = "/Preview/Demo.mov">
+  <img src = "/Preview/Demo.gif">
 </p>
 
 ## Get Involved
