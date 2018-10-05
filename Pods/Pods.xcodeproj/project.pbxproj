@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -142,7 +142,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0040AAC17FAF982D8EC47678DC3E12C3 /* cryptonight.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cryptonight.c; path = XMRMiner/Vendor/crypto/cryptonight.c; sourceTree = "<group>"; };
+		0040AAC17FAF982D8EC47678DC3E12C3 /* cryptonight.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = cryptonight.c; path = XMRMiner/Vendor/crypto/cryptonight.c; sourceTree = "<group>"; };
 		0075EBA0D0AFBCA187140FA4A5491E69 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
 		03FA50F313DD1BDF5E2F032647E5FB71 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0417A441C127931F79FF6EE167DDA5A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -175,16 +175,16 @@
 		43FB70DE5E3AC005C1BE828BF935F7EB /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		546F635DC84FE34DFBF07AD563231FA2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		5543B8110C736D420012EB12FD3B5DC4 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
-		555D7A400064DEF03C120B65985114DB /* aesb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aesb.c; path = XMRMiner/Vendor/crypto/aesb.c; sourceTree = "<group>"; };
-		5F3C9D2347521B14B24D8CDA7EAE377D /* NSData_FastHex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NSData_FastHex.framework; path = "NSData+FastHex.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		555D7A400064DEF03C120B65985114DB /* aesb.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aesb.c; path = XMRMiner/Vendor/crypto/aesb.c; sourceTree = "<group>"; };
+		5F3C9D2347521B14B24D8CDA7EAE377D /* NSData_FastHex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSData_FastHex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F4D6FCCC92144C1BBF623715A94EE22 /* RPCResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RPCResponse.swift; path = XMRMiner/Source/Network/RPC/RPCResponse.swift; sourceTree = "<group>"; };
 		60101B308820F1627C6863295AC7D2EF /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
 		63A6AB62C5ABE7E99C8F56A090600BA7 /* HashContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HashContext.h; path = XMRMiner/Source/Hashing/HashContext.h; sourceTree = "<group>"; };
-		63FEDE007EE4F19A7D9D88BD8E7BB99D /* XMRMiner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMRMiner.framework; path = XMRMiner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FEDE007EE4F19A7D9D88BD8E7BB99D /* XMRMiner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMRMiner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664396324234E2833E9897CAC5519094 /* XMRMiner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XMRMiner.modulemap; sourceTree = "<group>"; };
 		6742CA1CE73586A9CD5FFF8F047CF33B /* MiningError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MiningError.swift; path = XMRMiner/Source/MiningError.swift; sourceTree = "<group>"; };
 		68BC38194341E6F9C007A1F3CCDCF3C4 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
-		71158B4AECC7968665173D155E376EB1 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71158B4AECC7968665173D155E376EB1 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		748CE88DCFA8432430D2F24C05ECC214 /* NSData+FastHex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+FastHex-umbrella.h"; sourceTree = "<group>"; };
 		75E9CB03DF61BDEBF6A4C8A15FB160E2 /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
 		770EEF193525995B5BD4A2C2E1AFF01D /* oaes_lib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = oaes_lib.h; path = XMRMiner/Vendor/crypto/oaes_lib.h; sourceTree = "<group>"; };
@@ -194,27 +194,27 @@
 		8CF4AABD180D4F44C42D2F0FE43A641B /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
 		8F7855A283B4C8DC3217B98856A528BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A708424E9478D75F6CA0EED85E29CA /* RPCNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RPCNotification.swift; path = XMRMiner/Source/Network/RPC/RPCNotification.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96201EEA014AFEFDDAB6C28592F8B83F /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
 		9AC479D550DEA183A9DFFEEC87FD8220 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
 		9BF67F430E58776D5C48F8F23AB1C8BC /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
 		9D64826CFBFD4F4F103C57B1374F6CE7 /* NSData+FastHex.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSData+FastHex.xcconfig"; sourceTree = "<group>"; };
 		9E3662D9078CF15261808B25FDD42B99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9F88BA4A7F8E29225C8FA7B489131F96 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
-		A9BC686F47282308451BB820E034CEAA /* blake.c */ = {isa = PBXFileReference; includeInIndex = 1; name = blake.c; path = XMRMiner/Vendor/crypto/blake.c; sourceTree = "<group>"; };
+		A9BC686F47282308451BB820E034CEAA /* blake.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = blake.c; path = XMRMiner/Vendor/crypto/blake.c; sourceTree = "<group>"; };
 		AB9DFA28B5B998E68EAD180E9C0E54B3 /* NSData+FastHex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+FastHex-prefix.pch"; sourceTree = "<group>"; };
 		ADE616D98C9632674AC699C3AF6F308F /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0460F21B9C1284E67998174E621C9A9 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
-		B1E744AF8043EFB3F8E35F0535EA9010 /* groestl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = groestl.c; path = XMRMiner/Vendor/crypto/groestl.c; sourceTree = "<group>"; };
-		B25C10448D6B92E038B7AA9FA0EBDBFE /* skein.c */ = {isa = PBXFileReference; includeInIndex = 1; name = skein.c; path = XMRMiner/Vendor/crypto/skein.c; sourceTree = "<group>"; };
+		B1E744AF8043EFB3F8E35F0535EA9010 /* groestl.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = groestl.c; path = XMRMiner/Vendor/crypto/groestl.c; sourceTree = "<group>"; };
+		B25C10448D6B92E038B7AA9FA0EBDBFE /* skein.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = skein.c; path = XMRMiner/Vendor/crypto/skein.c; sourceTree = "<group>"; };
 		B2B61100DA6D5B5DACE1A6294CE16650 /* Miner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Miner.swift; path = XMRMiner/Source/Miner.swift; sourceTree = "<group>"; };
-		B7AB449B91F5148B2204EC64F65FB71D /* Pods_Miner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Miner.framework; path = "Pods-Miner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7AB449B91F5148B2204EC64F65FB71D /* Pods_Miner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FB8487372E9EA39E899C499357585A /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96A2723BBAD5FA9268E99767A8A403F /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Client.swift; path = XMRMiner/Source/Network/Client.swift; sourceTree = "<group>"; };
 		BA0FB70FD83BF0F82416205262F25F3C /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
 		BA576B88879E115A8D58A6F0C7DB22F1 /* XMRMiner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMRMiner-umbrella.h"; sourceTree = "<group>"; };
 		C052BD69909A4730FFD0ECBD6259FB16 /* groestl_tables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = groestl_tables.h; path = XMRMiner/Vendor/crypto/groestl_tables.h; sourceTree = "<group>"; };
-		C057D4983A2052B2E55E121A3C20D695 /* jh_ansi_opt64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = jh_ansi_opt64.c; path = XMRMiner/Vendor/crypto/jh/jh_ansi_opt64.c; sourceTree = "<group>"; };
+		C057D4983A2052B2E55E121A3C20D695 /* jh_ansi_opt64.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = jh_ansi_opt64.c; path = XMRMiner/Vendor/crypto/jh/jh_ansi_opt64.c; sourceTree = "<group>"; };
 		C30085AB7E0FED2DDB5741B68428EE91 /* Pods-Miner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Miner.release.xcconfig"; sourceTree = "<group>"; };
 		C3CFB81091DB54DB7D36BB0DA0CB8115 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C51FDA8DEDDF20976B00983E660264E3 /* aesb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesb.h; path = XMRMiner/Vendor/crypto/aesb.h; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 		D7362B8E8672DCB71BF9095077A11345 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
 		DC530A1942BCC37B1F708013A3FFC270 /* XMRMiner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMRMiner-dummy.m"; sourceTree = "<group>"; };
 		DCB116498E86D7188FF99A2B9E15B3E7 /* Pods-Miner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Miner-umbrella.h"; sourceTree = "<group>"; };
-		DE50C0E12E07C3AD0DFB1537D5AC31B4 /* oaes_lib.c */ = {isa = PBXFileReference; includeInIndex = 1; name = oaes_lib.c; path = XMRMiner/Vendor/crypto/oaes_lib.c; sourceTree = "<group>"; };
+		DE50C0E12E07C3AD0DFB1537D5AC31B4 /* oaes_lib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = oaes_lib.c; path = XMRMiner/Vendor/crypto/oaes_lib.c; sourceTree = "<group>"; };
 		DEF54EF724BD7F1AC7E6254899937224 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
 		DF533537241657F87336BB68A892F119 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
 		E0277E6DF8568A383008FA724160447C /* skein.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = skein.h; path = XMRMiner/Vendor/crypto/skein.h; sourceTree = "<group>"; };
@@ -237,10 +237,10 @@
 		E23BE54B667CB56792EDCD96718411F0 /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
 		E4961CDCDE14079258B6F4BD55969E7E /* Pods-Miner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Miner-dummy.m"; sourceTree = "<group>"; };
 		E4A095947D9BA9260C54174AF05622C3 /* blake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blake.h; path = XMRMiner/Vendor/crypto/blake.h; sourceTree = "<group>"; };
-		E4A3CB5EB908C2FD069FC8FCC5F7195A /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E902D39B95B4C05F9736004740A62E6E /* keccak.c */ = {isa = PBXFileReference; includeInIndex = 1; name = keccak.c; path = XMRMiner/Vendor/crypto/keccak.c; sourceTree = "<group>"; };
+		E4A3CB5EB908C2FD069FC8FCC5F7195A /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E902D39B95B4C05F9736004740A62E6E /* keccak.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = keccak.c; path = XMRMiner/Vendor/crypto/keccak.c; sourceTree = "<group>"; };
 		EE1729E1AAC8111A1EF8E0087471C213 /* groestl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = groestl.h; path = XMRMiner/Vendor/crypto/groestl.h; sourceTree = "<group>"; };
-		F0B137C0A7EF417F4799F27D8919DD65 /* HashContext.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = HashContext.mm; path = XMRMiner/Source/Hashing/HashContext.mm; sourceTree = "<group>"; };
+		F0B137C0A7EF417F4799F27D8919DD65 /* HashContext.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = HashContext.mm; path = XMRMiner/Source/Hashing/HashContext.mm; sourceTree = "<group>"; };
 		F11E780E6428D1F9C14D9D15E8FE7B71 /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
 		F54117528B7BB8D6CDE9592992D7B82C /* cryptonight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cryptonight.h; path = XMRMiner/Vendor/crypto/cryptonight.h; sourceTree = "<group>"; };
 		FAAF744CF2035E9B50EE28C77609EA19 /* NSData+FastHex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "NSData+FastHex.modulemap"; sourceTree = "<group>"; };
@@ -371,7 +371,6 @@
 				1A0EB7F1EB0D46995F586E8AC3FD113D /* GCDAsyncUdpSocket.m */,
 				4DC2EF8A6ECED38A51198A3941C40660 /* Support Files */,
 			);
-			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -433,7 +432,6 @@
 				C5C5A89902E825763DC11B0A1AFD1C8A /* skein_port.h */,
 				901A7C1DE4F47332B875CDD87ACA2288 /* Support Files */,
 			);
-			name = XMRMiner;
 			path = XMRMiner;
 			sourceTree = "<group>";
 		};
@@ -483,7 +481,6 @@
 				0D7271404E193B779C47D3271CEE326C /* NSData+FastHex.m */,
 				9CCA8CDA2E0597EEBEC8242E560CB621 /* Support Files */,
 			);
-			name = "NSData+FastHex";
 			path = "NSData+FastHex";
 			sourceTree = "<group>";
 		};
@@ -515,7 +512,6 @@
 				8CF4AABD180D4F44C42D2F0FE43A641B /* URLTransform.swift */,
 				C4869457E63D6F3F26DED8CA8EF0170D /* Support Files */,
 			);
-			name = ObjectMapper;
 			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
@@ -693,7 +689,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1000;
+				TargetAttributes = {
+					CD6C9FB6B052E1CF663F8A56041EA163 = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -867,11 +868,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
 				PRODUCT_MODULE_NAME = ObjectMapper;
@@ -880,7 +877,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -904,11 +901,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
 				PRODUCT_MODULE_NAME = ObjectMapper;
@@ -917,7 +910,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -942,11 +935,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/XMRMiner/XMRMiner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/XMRMiner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "Target Support Files/XMRMiner/XMRMiner.modulemap";
 				PRODUCT_MODULE_NAME = XMRMiner;
@@ -980,11 +969,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Target Support Files/Pods-Miner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "Target Support Files/Pods-Miner/Pods-Miner.modulemap";
@@ -1021,11 +1006,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/XMRMiner/XMRMiner-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/XMRMiner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "Target Support Files/XMRMiner/XMRMiner.modulemap";
 				PRODUCT_MODULE_NAME = XMRMiner;
@@ -1058,11 +1039,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
 				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
@@ -1095,11 +1072,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSData+FastHex/NSData+FastHex-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSData+FastHex/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MODULEMAP_FILE = "Target Support Files/NSData+FastHex/NSData+FastHex.modulemap";
 				PRODUCT_MODULE_NAME = NSData_FastHex;
@@ -1132,11 +1105,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NSData+FastHex/NSData+FastHex-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NSData+FastHex/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MODULEMAP_FILE = "Target Support Files/NSData+FastHex/NSData+FastHex.modulemap";
 				PRODUCT_MODULE_NAME = NSData_FastHex;
@@ -1169,11 +1138,7 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Target Support Files/Pods-Miner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "Target Support Files/Pods-Miner/Pods-Miner.modulemap";
@@ -1271,11 +1236,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
 				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
@@ -1343,6 +1304,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
