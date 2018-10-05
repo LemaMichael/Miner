@@ -8,14 +8,20 @@
 
 import Cocoa
 import XMRMiner
+import ServiceManagement
+import AppKit
 
-class StatusMenuController: NSObject {
+
+class StatusMenuController: NSObject, PreferencesWindowDelegate {
     
     var currentVal: UInt = 0
     let miner = Miner(destinationAddress: UserDefaults.standard.getAddress())
     var isMining = false
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    
+    let defaults = Foundation.UserDefaults.standard
+    var preferencesControl: PrefViewController!
+
+
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var hashRate: NSMenuItem!
     @IBOutlet weak var submittedHashes: NSMenuItem!
@@ -59,11 +65,43 @@ class StatusMenuController: NSObject {
         
         totalSubmittedHeading.title = "Since \(UserDefaults.standard.getLaunchDate())"
         totalSubmitted.title = "\(UserDefaults.standard.getTotalHashes()) H/s"
+        preferencesControl = PrefViewController()
+        preferencesControl.delegate = self
     }
     
     fileprivate func setupMiner() {
         miner.delegate = self
         startMining()
+        
+        var startAtLogin = false
+        if defaults.object(forKey: UserDefaults.UserDefaultKeys.launchFromStart.rawValue) == nil {
+            startAtLogin = true
+            defaults.set(true, forKey: UserDefaults.UserDefaultKeys.launchFromStart.rawValue)
+        } else {
+            startAtLogin = defaults.bool(forKey: UserDefaults.UserDefaultKeys.launchFromStart.rawValue)
+        }
+        toggleStartAtLogin(startAtLogin)
+    }
+    
+    //MARK: Login
+    func toggleStartAtLogin(_ start:Bool) {
+        let launcherAppIdentifier = "com.lema.Miner.Monero"
+        SMLoginItemSetEnabled(launcherAppIdentifier as CFString, start)
+        var startedAtLogin = false
+        for app in NSWorkspace.shared.runningApplications {
+            if app.bundleIdentifier == launcherAppIdentifier {
+                startedAtLogin = true
+            }
+        }
+        if startedAtLogin == true {
+            DistributedNotificationCenter.default().postNotificationName(NSNotification.Name(rawValue: "killme"),
+                                                                         object: Bundle.main.bundleIdentifier!,
+                                                                         userInfo: nil,
+                                                                         deliverImmediately: true)
+        }
+        
+        defaults.set(start, forKey: UserDefaults.UserDefaultKeys.launchFromStart.rawValue)
+        defaults.synchronize()
     }
     
     fileprivate func startMining() {

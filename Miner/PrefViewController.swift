@@ -7,17 +7,20 @@
 //
 
 import Cocoa
-import LaunchAtLogin
+
+protocol PreferencesWindowDelegate {
+    func toggleStartAtLogin(_ start:Bool)
+}
 
 class PrefViewController: NSViewController {
-    
     
     @IBOutlet weak var moneroAddressTF: NSTextField!
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var launchAtLoginBtn: NSButton!
     @IBOutlet weak var instructionText: NSTextField!
-    
-    var prefs = Preferences()
+    var delegate: PreferencesWindowDelegate?
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,18 +29,27 @@ class PrefViewController: NSViewController {
         textField.delegate = self
         textField.placeholderString = UserDefaults.standard.getAddress()
         
-        launchAtLoginBtn.state = NSControl.StateValue(rawValue: prefs.launchAtLogin.intValue)
+        launchAtLoginBtn.state = NSControl.StateValue(rawValue: 1)
         if let mutableAttributedTitle = launchAtLoginBtn.attributedTitle.mutableCopy() as? NSMutableAttributedString {
             mutableAttributedTitle.addAttribute(.foregroundColor, value: NSColor.white, range: NSRange(location: 0, length: mutableAttributedTitle.length))
             launchAtLoginBtn.attributedTitle = mutableAttributedTitle
         }
-
+        
+        if let mutableTitle = moneroAddressTF.attributedStringValue.mutableCopy() as? NSMutableAttributedString {
+            mutableTitle.addAttribute(.foregroundColor, value: NSColor.white, range: NSRange(location: 0, length: mutableTitle.length))
+            moneroAddressTF.attributedStringValue = mutableTitle
+        }
+    
     }
     
-    @IBAction func launchAtLoginBtnClicked(_ sender: Any) {
-        let state = launchAtLoginBtn.state.rawValue.boolValue
-        LaunchAtLogin.isEnabled = state
-        prefs.launchAtLogin = state
+    @IBAction func launchAtLoginBtnClicked(_ sender: NSButton) {
+        var isOn:Bool = false
+        if sender.state == .off {
+            isOn = false
+        } else if sender.state == .on {
+            isOn = true
+        }
+        Foundation.UserDefaults.standard.set(isOn, forKey: UserDefaults.UserDefaultKeys.launchFromStart.rawValue)
     }
     
 }
@@ -79,16 +91,4 @@ extension Int {
 
 extension Bool {
     var intValue: Int { return self == false ? 0 : 1 }
-}
-
-struct Preferences {
-    let defaults = UserDefaults.standard
-    var launchAtLogin: Bool {
-        get {
-            return defaults.bool(forKey: "launchAtLogin")
-        }
-        set {
-            defaults.set(newValue, forKey: "launchAtLogin")
-        }
-    }
 }

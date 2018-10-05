@@ -13,6 +13,7 @@ extension UserDefaults {
         case address
         case launchDate
         case hasLaunchedBefore
+        case launchFromStart = "launchFromStart"
         case hashesSubmitted
     }
     
@@ -47,6 +48,5 @@ extension UserDefaults {
         dateFormatter.dateFormat = "MMM. d, h:mm a"
         return dateFormatter.string(from: validDate)
     }
-    
     
 }

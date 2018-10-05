@@ -14,8 +14,26 @@
 		4CB35ECC214C74F50071BFAD /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB35ECB214C74F50071BFAD /* UserDefaultsExtension.swift */; };
 		4CD5A839214CC67D00A5059F /* PrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5A838214CC67D00A5059F /* PrefViewController.swift */; };
 		4CD5A83B214CC6CF00A5059F /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD5A83A214CC6CF00A5059F /* Preferences.storyboard */; };
+		4CD720A92166FA340056BDA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD720A82166FA340056BDA0 /* AppDelegate.swift */; };
+		4CD720AB2166FA350056BDA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD720AA2166FA350056BDA0 /* Assets.xcassets */; };
+		4CD720AE2166FA350056BDA0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD720AC2166FA350056BDA0 /* MainMenu.xib */; };
+		4CD720B52166FAD00056BDA0 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD720B42166FAD00056BDA0 /* ServiceManagement.framework */; };
+		4CD720B72166FB550056BDA0 /* Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4CD720A62166FA340056BDA0 /* Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FC8A88A066A5C3415A18BE8A /* Pods_Miner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDAC41B0ABF951731D34EEF /* Pods_Miner.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CD720B62166FB450056BDA0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				4CD720B72166FB550056BDA0 /* Helper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3EDAC41B0ABF951731D34EEF /* Pods_Miner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,11 +42,16 @@
 		4C29D130214C2DA0007DB407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C29D133214C2DA0007DB407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C29D135214C2DA0007DB407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C29D136214C2DA0007DB407 /* Miner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Miner.entitlements; sourceTree = "<group>"; };
 		4C9235A6214C36F300D9985D /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		4CB35ECB214C74F50071BFAD /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		4CD5A838214CC67D00A5059F /* PrefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefViewController.swift; sourceTree = "<group>"; };
 		4CD5A83A214CC6CF00A5059F /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
+		4CD720A62166FA340056BDA0 /* Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD720A82166FA340056BDA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CD720AA2166FA350056BDA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CD720AD2166FA350056BDA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4CD720AF2166FA350056BDA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CD720B42166FAD00056BDA0 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		5C9B8277C75B695D2263F584 /* Pods-Miner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miner/Pods-Miner.release.xcconfig"; sourceTree = "<group>"; };
 		D65E056D586555B317D4F51D /* Pods-Miner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miner/Pods-Miner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CD720A32166FA340056BDA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD720B52166FAD00056BDA0 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4C29D12D214C2D9F007DB407 /* Miner */,
+				4CD720A72166FA340056BDA0 /* Helper */,
 				4C29D12C214C2D9F007DB407 /* Products */,
 				8B99403FF1A099EE7CEB7CDC /* Pods */,
 				957206B4BD244EFFD4788B6E /* Frameworks */,
@@ -59,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				4C29D12B214C2D9F007DB407 /* Miner.app */,
+				4CD720A62166FA340056BDA0 /* Helper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,10 +106,20 @@
 				4C29D130214C2DA0007DB407 /* Assets.xcassets */,
 				4C29D132214C2DA0007DB407 /* MainMenu.xib */,
 				4C29D135214C2DA0007DB407 /* Info.plist */,
-				4C29D136214C2DA0007DB407 /* Miner.entitlements */,
 				4CB35ECB214C74F50071BFAD /* UserDefaultsExtension.swift */,
 			);
 			path = Miner;
+			sourceTree = "<group>";
+		};
+		4CD720A72166FA340056BDA0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4CD720A82166FA340056BDA0 /* AppDelegate.swift */,
+				4CD720AA2166FA350056BDA0 /* Assets.xcassets */,
+				4CD720AC2166FA350056BDA0 /* MainMenu.xib */,
+				4CD720AF2166FA350056BDA0 /* Info.plist */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		8B99403FF1A099EE7CEB7CDC /* Pods */ = {
@@ -91,6 +134,7 @@
 		957206B4BD244EFFD4788B6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CD720B42166FAD00056BDA0 /* ServiceManagement.framework */,
 				3EDAC41B0ABF951731D34EEF /* Pods_Miner.framework */,
 			);
 			name = Frameworks;
@@ -108,7 +152,7 @@
 				4C29D128214C2D9F007DB407 /* Frameworks */,
 				4C29D129214C2D9F007DB407 /* Resources */,
 				E5420797217315D21929E4F7 /* [CP] Embed Pods Frameworks */,
-				4C4E6625214CD01700FAF308 /* ShellScript */,
+				4CD720B62166FB450056BDA0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -117,6 +161,23 @@
 			name = Miner;
 			productName = Miner;
 			productReference = 4C29D12B214C2D9F007DB407 /* Miner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CD720A52166FA340056BDA0 /* Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CD720B12166FA350056BDA0 /* Build configuration list for PBXNativeTarget "Helper" */;
+			buildPhases = (
+				4CD720A22166FA340056BDA0 /* Sources */,
+				4CD720A32166FA340056BDA0 /* Frameworks */,
+				4CD720A42166FA340056BDA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Helper;
+			productName = Helper;
+			productReference = 4CD720A62166FA340056BDA0 /* Helper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +194,15 @@
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 1;
+								enabled = 0;
+							};
+						};
+					};
+					4CD720A52166FA340056BDA0 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
 							};
 						};
 					};
@@ -153,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				4C29D12A214C2D9F007DB407 /* Miner */,
+				4CD720A52166FA340056BDA0 /* Helper */,
 			);
 		};
 /* End PBXProject section */
@@ -168,22 +238,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CD720A42166FA340056BDA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD720AB2166FA350056BDA0 /* Assets.xcassets in Resources */,
+				4CD720AE2166FA350056BDA0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4C4E6625214CD01700FAF308 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/bash\n\norigin_helper_path=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/LaunchAtLogin.framework/Resources/LaunchAtLoginHelper.app\"\nhelper_dir=\"$BUILT_PRODUCTS_DIR/$CONTENTS_FOLDER_PATH/Library/LoginItems\"\nhelper_path=\"$helper_dir/LaunchAtLoginHelper.app\"\n\nrm -rf \"$helper_path\"\nmkdir -p \"$helper_dir\"\ncp -rf \"$origin_helper_path\" \"$helper_dir/\"\n\ndefaults write \"$helper_path/Contents/Info\" CFBundleIdentifier -string \"$PRODUCT_BUNDLE_IDENTIFIER-LaunchAtLoginHelper\"\ncodesign --force --entitlements=\"$CODE_SIGN_ENTITLEMENTS\" --sign=\"$EXPANDED_CODE_SIGN_IDENTITY_NAME\" \"$helper_path\"\n\nif [[ $CONFIGURATION == \"Release\" ]]; then\nrm -rf \"$origin_helper_path\"\nrm \"$(dirname $origin_helper_path)/copy-helper.sh\"\nfi\n";
-		};
 		8AA79946D5A21418D5D973E4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,7 +276,6 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Miner/Pods-Miner-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
-				"${BUILT_PRODUCTS_DIR}/LaunchAtLogin/LaunchAtLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/NSData+FastHex/NSData_FastHex.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/XMRMiner/XMRMiner.framework",
@@ -218,7 +283,6 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LaunchAtLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSData_FastHex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMRMiner.framework",
@@ -242,6 +306,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CD720A22166FA340056BDA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD720A92166FA340056BDA0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -249,6 +321,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C29D133214C2DA0007DB407 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4CD720AC2166FA350056BDA0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD720AD2166FA350056BDA0 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -376,7 +456,6 @@
 			baseConfigurationReference = D65E056D586555B317D4F51D /* Pods-Miner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Miner/Miner.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -387,7 +466,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lema.Miner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lema.Miner.Monero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -399,7 +478,6 @@
 			baseConfigurationReference = 5C9B8277C75B695D2263F584 /* Pods-Miner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Miner/Miner.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -410,7 +488,50 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lema.Miner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lema.Miner.Monero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		4CD720B22166FA350056BDA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MFNQ54N2S6;
+				INFOPLIST_FILE = Helper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lema.Miner.Helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4CD720B32166FA350056BDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MFNQ54N2S6;
+				INFOPLIST_FILE = Helper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lema.Miner.Helper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -434,6 +555,15 @@
 			buildConfigurations = (
 				4C29D13A214C2DA0007DB407 /* Debug */,
 				4C29D13B214C2DA0007DB407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CD720B12166FA350056BDA0 /* Build configuration list for PBXNativeTarget "Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD720B22166FA350056BDA0 /* Debug */,
+				4CD720B32166FA350056BDA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
